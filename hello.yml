@@ -1,0 +1,11 @@
+---
+
+-name: create a new file and delete it.
+ hosts: all
+ task :
+   -name: create username file in tmp directory
+    file:
+    path: '/tmp/shahbaz.txt'
+    state: present
+    
+
